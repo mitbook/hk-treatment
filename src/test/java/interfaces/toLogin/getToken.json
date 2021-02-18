@@ -1,0 +1,5 @@
+{
+  "user": "#(user)",
+  "passwd": "#(password)",
+  "random": "#(random)"
+}
