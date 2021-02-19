@@ -5,7 +5,7 @@ Feature:工作台-->新增病程
     * def randomName = Java.type('util.rand.RName')
 
   @ignore
-  Scenario:新增病程
+  Scenario:工作台-->新增病程
     * def name = randomName.getRandomName()
     * def patient_name = name
     * def patient_sex = "男"

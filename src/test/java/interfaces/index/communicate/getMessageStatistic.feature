@@ -4,7 +4,7 @@ Feature:首页--->获取待处理的消息
     * url zlUrl
 
 
-  Scenario:获取待处理的消息
+  Scenario:首页--->获取待处理的消息
     Given path '/communicate/getMessageStatistic'
     * header authToken = authToken
     * request {}

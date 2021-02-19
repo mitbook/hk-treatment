@@ -4,7 +4,7 @@ Feature:任务管理--->获取共享任务列表
     * url zlUrl
 
   @ignore
-  Scenario:获取共享任务列表
+  Scenario:任务管理--->获取共享任务列表
     Given path '/referral/getReferralApply'
     * header authToken = authToken
     * request read("classpath:interfaces/task/referral/getReferralApply.json")

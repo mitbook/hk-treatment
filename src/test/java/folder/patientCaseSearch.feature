@@ -3,7 +3,7 @@ Feature:病历夹-->查询就诊列表
   Background:
     * url zlUrl
 
-  Scenario:查询病例列表
+  Scenario:病历夹-->查询就诊列表
     * def medicalrecord_num = ''
     * def patient_name = ''
     * def p_motherName = ''

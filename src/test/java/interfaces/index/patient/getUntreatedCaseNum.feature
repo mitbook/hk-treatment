@@ -4,7 +4,7 @@ Feature:首页--->获取待处理病例数
     * url zlUrl
 
 
-  Scenario:获取待处理病例数
+  Scenario:首页--->获取待处理病例数
     Given path '/patient/getUntreatedCaseNum'
     * header authToken = authToken
     * request {}

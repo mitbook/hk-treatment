@@ -5,7 +5,7 @@ Feature:工作台--->查询病例列表
 
 
   @ignore
-  Scenario:查询病例列表
+  Scenario:工作台--->查询病例列表
     Given path '/workbench/queryCaseList'
     * header authToken = authToken
     * request read("classpath:interfaces/work/workbench/queryCaseList.json")

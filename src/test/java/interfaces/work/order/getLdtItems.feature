@@ -5,7 +5,7 @@ Feature:工作台--->获取ldt
 
 
   @ignore
-  Scenario:获取ldt
+  Scenario:工作台--->获取ldt
     Given path '/order/getLdtItems'
     * header authToken = authToken
     * request {}

@@ -1,9 +1,9 @@
-Feature:直报中心--->获取共享任务列表
+Feature:任务管理--->共享任务--->获取共享任务列表
 
   Background:
     * url zlUrl
 
-  Scenario:获取共享任务列表
+  Scenario:任务管理--->共享任务--->获取共享任务列表
     * def referral_state = 'ALL'
     * def search_path = 'ALL'
     * def search = ''

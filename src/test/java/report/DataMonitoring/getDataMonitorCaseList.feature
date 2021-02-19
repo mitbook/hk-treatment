@@ -4,7 +4,7 @@ Feature:直报中心--->病例登记列表查询
     * url zlUrl
 
 
-  Scenario:病例登记列表查询
+  Scenario:直报中心--->病例登记列表查询
     * def report_source = ''
     * def report_state = ''
     * def pageno = 1

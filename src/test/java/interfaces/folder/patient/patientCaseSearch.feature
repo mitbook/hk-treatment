@@ -4,7 +4,7 @@ Feature:病历夹-->查询就诊列表
     * url zlUrl
 
   @ignore
-  Scenario:查询病例列表
+  Scenario:病历夹-->查询就诊列表
     Given path '/patient/patientCaseSearch'
     * header authToken = authToken
     * form fields read('classpath:interfaces/folder/patient/patientCaseSearch.json')

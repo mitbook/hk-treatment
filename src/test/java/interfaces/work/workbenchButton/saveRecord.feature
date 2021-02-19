@@ -5,7 +5,7 @@ Feature:工作台--->新增病程
 
 
   @ignore
-  Scenario:新增病程
+  Scenario:工作台--->新增病程
     Given path '/workbenchButton/saveRecord'
     * header authToken = authToken
     * request read("classpath:interfaces/work/workbenchButton/saveRecord.json")

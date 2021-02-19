@@ -4,7 +4,7 @@ Feature:首页--->获取病例诊断比例
     * url zlUrl
 
 
-  Scenario:获取病例诊断比例
+  Scenario:首页--->获取病例诊断比例
     Given path '/patient/getDiseaseDiagnosisProportion'
     * header authToken = authToken
     * request {}

@@ -4,7 +4,7 @@ Feature:直报中心--->病例编辑
     * url zlUrl
 
   @ignore
-  Scenario:病例编辑
+  Scenario:直报中心--->病例编辑
     Given path '/DataMonitoring/getDataMonitorCaseList'
     * header authToken = authToken
     * request read("classpath:interfaces/report/DataMonitoring/saveData.json")

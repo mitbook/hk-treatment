@@ -4,7 +4,7 @@ Feature:首页--->统计年度病例
     * url zlUrl
 
 
-  Scenario:统计年度病例
+  Scenario:首页--->统计年度病例
     * def type = 0
     * def startYear = 2020
     * def endYear = 2020

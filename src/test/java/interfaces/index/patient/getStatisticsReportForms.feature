@@ -4,7 +4,7 @@ Feature:首页--->统计年度病例
     * url zlUrl
 
   @ignore
-  Scenario:统计年度病例
+  Scenario:首页--->统计年度病例
     Given path '/patient/getStatisticsReportForms'
     * header authToken = authToken
     * request read("classpath:interfaces/index/patient/getStatisticsReportForms.json")

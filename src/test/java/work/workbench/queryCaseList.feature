@@ -4,7 +4,7 @@ Feature:工作台-->查询病例列表
     * url zlUrl
 
 
-  Scenario:查询病例列表
+  Scenario:工作台-->查询病例列表
     * def case_state = 1
     * def pageno = 1
     * def pagesize = 50

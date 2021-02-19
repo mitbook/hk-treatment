@@ -5,7 +5,7 @@ Feature:工作台--->新增病人
 
 
   @ignore
-  Scenario:新增病人
+  Scenario:工作台--->新增病人
     Given path '/ConsultationMission/getLikelyCase'
     * header authToken = authToken
     * form fields read("classpath:interfaces/work/ConsultationMission/getLikelyCase.json")
