@@ -1,0 +1,11 @@
+{
+  "report_source": "#(report_source)",
+  "report_state": "#(report_state)",
+  "pageno": "#(pageno)",
+  "pagesize": "#(pagesize)",
+  "diagnosis_state": "#(diagnosis_state)",
+  "diseaseIds": "#(diseaseIds)",
+  "date": "#(date)",
+  "page": "#(page)",
+  "type": "#(type)"
+}
