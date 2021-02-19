@@ -19,5 +19,9 @@ function fn() {
     config.zlUrl = 'http://172.100.100.224:8002'
   }
   karate.configure('connectTimeout', 5000);
+  var authTokenBag = karate.callSingle(
+      "classpath:login/login.feature", config)
+  config.authToken = authTokenBag.authToken
+  karate.log("karate-config.js文件中获取到接口认证authToken的值:" + config.authToken)
   return config;
 }

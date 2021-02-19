@@ -1,0 +1,6 @@
+{
+  "type":"#(type)",
+  "startYear":"#(startYear)",
+  "endYear":"#(endYear)",
+  "state": "#(state)"
+}
