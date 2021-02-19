@@ -3,7 +3,7 @@ Feature:查询预约列表
   Background:
     * url zlUrl
 
-
+  @ignore
   Scenario:查询预约列表
     Given path '/patient/patientAppointSearch'
     * header authToken = authToken

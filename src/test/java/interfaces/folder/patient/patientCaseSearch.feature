@@ -3,7 +3,7 @@ Feature:查询病例列表
   Background:
     * url zlUrl
 
-
+  @ignore
   Scenario:查询病例列表
     Given path '/patient/patientCaseSearch'
     * header authToken = authToken
