@@ -1,0 +1,7 @@
+{
+  "mother_name": "#(mother_name)",
+  "patient_name": "#(patient_name)",
+  "patient_sex": "#(patient_sex)",
+  "patient_birthday": "#(patient_birthday)",
+  "mobile": "#(mobile)"
+}

@@ -1,0 +1,12 @@
+{
+  "type": "#(type)",
+  "consultation_receive_area": "#(consultation_receive_area)",
+  "consultation_receive_hospital": "#(consultation_receive_hospital)",
+  "consultation_receive_department": "#(consultation_receive_department)",
+  "consultation_remark": "#(consultation_remark)",
+  "case_id": "#(case_id)",
+  "patient_name": "#(patient_name)",
+  "patient_sex": "#(patient_sex)",
+  "patient_birthday": "#(patient_birthday)",
+  "mobile": "#(mobile)"
+}
