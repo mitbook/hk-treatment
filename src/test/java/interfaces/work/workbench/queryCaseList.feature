@@ -1,0 +1,13 @@
+Feature:查询病例列表
+
+  Background:
+    * url zlUrl
+
+
+  @ignore
+  Scenario:查询病例列表
+    Given path '/workbench/queryCaseList'
+    * header authToken = authToken
+    * request read("classpath:interfaces/work/workbench/queryCaseList.json")
+    When method post
+    Then status 200
