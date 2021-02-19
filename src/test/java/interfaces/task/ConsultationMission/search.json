@@ -1,0 +1,7 @@
+{
+  "consultation_state": "#(consultation_state)",
+  "search_path": "#(search_path)",
+  "search": "#(search)",
+  "pageno": "#(pageno)",
+  "pagesize": "#(pagesize)"
+}
