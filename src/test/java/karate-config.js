@@ -20,7 +20,7 @@ function fn() {
   }
   karate.configure('connectTimeout', 5000);
   var authTokenBag = karate.callSingle(
-      "classpath:login/login.feature", config)
+      "classpath:case/login/login.feature", config)
   config.authToken = authTokenBag.authToken
   karate.log("karate-config.js文件中获取到接口认证authToken的值:" + config.authToken)
   return config;
