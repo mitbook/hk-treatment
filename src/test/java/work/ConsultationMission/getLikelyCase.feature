@@ -1,4 +1,4 @@
-Feature:新增病人
+Feature:工作台-->新增病人
 
   Background:
     * url zlUrl

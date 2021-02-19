@@ -1,4 +1,4 @@
-Feature:pass数据同步
+Feature:设置--->pass数据同步
 
   Background:
     * url zlUrl

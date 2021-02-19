@@ -1,4 +1,4 @@
-Feature:获取病例诊断比例
+Feature:首页--->获取病例诊断比例
 
   Background:
     * url zlUrl

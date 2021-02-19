@@ -1,4 +1,4 @@
-Feature:获取累计病例数
+Feature:首页--->获取累计病例数
 
   Background:
     * url zlUrl

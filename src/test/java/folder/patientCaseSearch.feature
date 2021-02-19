@@ -1,4 +1,4 @@
-Feature:查询病例列表
+Feature:病历夹-->查询就诊列表
 
   Background:
     * url zlUrl
