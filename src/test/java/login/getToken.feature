@@ -5,7 +5,7 @@ Feature: 获取tokenId
 
   @ignore
   Scenario: 获取tokenId
-    
+
     * call read("classpath:interfaces/toLogin/getToken.feature")
 
     * match $.result == "success"

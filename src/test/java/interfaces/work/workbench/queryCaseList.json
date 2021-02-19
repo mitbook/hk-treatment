@@ -1,8 +1,8 @@
 {
-  "case_state":"#(case_state)",
-  "pageno":"#(pageno)",
-  "pagesize":"#(pagesize)",
-  "sampleAction":"#(sampleAction)",
+  "case_state": "#(case_state)",
+  "pageno": "#(pageno)",
+  "pagesize": "#(pagesize)",
+  "sampleAction": "#(sampleAction)",
   "diagnosis_date_range": [],
   "appointTimeRange": [],
   "patient_birthday_range": [],
