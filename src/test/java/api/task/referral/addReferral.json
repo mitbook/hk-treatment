@@ -1,13 +1,13 @@
 {
-  "type":"#(type)",
-  "case_id":"#(case_id)",
-  "mother_name":"#(mother_name)",
-  "patient_name":"#(patient_name)",
-  "patient_sex":"#(patient_sex)",
-  "patient_birthday":"#(patient_birthday)",
-  "mobile":"#(mobile)",
-  "referral_receive_area":"#(referral_receive_area)",
-  "referral_receive_hospital":"#(referral_receive_hospital)",
-  "referral_receive_depart":"#(referral_receive_depart)",
-  "referral_remark":"#(referral_remark)"
+  "type": "#(type)",
+  "case_id": "#(case_id)",
+  "mother_name": "#(mother_name)",
+  "patient_name": "#(patient_name)",
+  "patient_sex": "#(patient_sex)",
+  "patient_birthday": "#(patient_birthday)",
+  "mobile": "#(mobile)",
+  "referral_receive_area": "#(referral_receive_area)",
+  "referral_receive_hospital": "#(referral_receive_hospital)",
+  "referral_receive_depart": "#(referral_receive_depart)",
+  "referral_remark": "#(referral_remark)"
 }
