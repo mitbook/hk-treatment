@@ -1,0 +1,9 @@
+{
+  "mobile": "#(mobile)",
+  "type": "#(type)",
+  "template": "#(template)",
+  "speaker": "#(speaker)",
+  "content": "#(content)",
+  "case_id": "#(case_id)",
+  "record_id": "#(record_id)"
+}
