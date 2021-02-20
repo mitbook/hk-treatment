@@ -1,0 +1,7 @@
+{
+  "mobile": "#(mobile)",
+  "type": "#(type)",
+  "template": "#(template)",
+  "content": "#(content)",
+  "case_id": "#(case_id)"
+}
