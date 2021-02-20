@@ -1,0 +1,7 @@
+{
+  "appoint_id": "#(appoint_id)",
+  "patient_mobile": "#(patient_mobile)",
+  "type": "#(type)",
+  "appoint_type": "#(appoint_type)",
+  "appoint_time": "#(appoint_time)"
+}
