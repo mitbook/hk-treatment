@@ -23,5 +23,6 @@ Feature:工作台-->新增病程
     * def house_type_name = "农业户口"
     * def record_type = "1"
     * def advice = 'auto_多喝热水'
+
     * call read("classpath:api/work/workbenchButton/saveRecord.feature")
     * match $.result == "success"

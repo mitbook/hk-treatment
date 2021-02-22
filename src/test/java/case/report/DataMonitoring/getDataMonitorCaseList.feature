@@ -14,6 +14,8 @@ Feature:直报中心--->病例登记列表查询
     * def date = []
     * def page = 1
     * def type = 'TSH'
+
     * call read("classpath:api/report/DataMonitoring/getDataMonitorCaseList.feature")
     * match $.result == "success"
+
     * def caseList = response.data.list[0]

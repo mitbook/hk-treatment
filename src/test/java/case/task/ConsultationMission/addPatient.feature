@@ -12,5 +12,6 @@ Feature:任务管理--->会诊任务--->新增会诊
     * def patient_sex = '男'
     * def patient_birthday = '2021-02-19'
     * def mobile = '13656694002'
+
     * call read("classpath:api/task/ConsultationMission/addPatient.feature")
     * match $.result == "success"

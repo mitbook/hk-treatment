@@ -12,5 +12,6 @@ Feature:任务管理--->共享任务--->新增共享
     * def patient_sex = '男'
     * def patient_birthday = '2021-02-19'
     * def mobile = '13656694002'
+
     * call read("classpath:api/task/referral/getRepeatCase.feature")
     * match $.result == "success"
