@@ -16,7 +16,7 @@ Feature:数据分析-->导出记录
     * def patientId = response.data.list[0].patientId
     * match $.result == "success"
 
-    #下载单条数据的excel
+    #下载单条数据的excel(excel下载返回的数据非json类型,故此不做返回状态文字的校验)
     * call read("classpath:api/dataAnalysis/downloadDataByPatientId.feature")
 
     #数据分析预下载,降低服务器压力
