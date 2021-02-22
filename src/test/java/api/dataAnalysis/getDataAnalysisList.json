@@ -1,0 +1,7 @@
+{
+  "experimentCode": "#(experimentCode)",
+  "patientSex": "#(patientSex)",
+  "pageno": "#(pageno)",
+  "pagesize": "#(pagesize)",
+  "sampleAction": "#(sampleAction)"
+}
