@@ -11,4 +11,8 @@
 2.绑定病例:pseridid改为acme的 persionId或者老新刷的persionId
 3.在新增病人到新增病程当中的疾病名称和诊断状态与接口请求中的diagnosis_state与诊断状态相互对应
   disease_id与疾病名称想对应
+
+###数据校验
+   1.新增病人到新增病程之后数据校验测试用例目录:case/work/workbench/queryCaseList.feature
+   
 ```
