@@ -1,9 +1,10 @@
 {
-  "case_state": "#(pageno)",
+  "case_state": "#(case_state)",
   "pageno": "#(pageno)",
   "pagesize": "#(pagesize)",
   "sampleAction": "#(sampleAction)",
   "diagnosis_state": "#(diagnosis_state)",
+  "patient_name": "#(patient_name)",
   "mother_name": "#(mother_name)",
   "diagnosis_date_range": "#(diagnosis_date_range)",
   "data_source": "#(data_source)",

@@ -62,5 +62,3 @@ Feature:工作台-->新增病程
     * match $.result == "success"
     * def case_id = response.data.case_id
     * def peronId = response.data.peronId
-    * print case_id
-    * print peronId
