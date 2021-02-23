@@ -58,9 +58,9 @@ Feature:工作台-->新增病程
     * def birth_weight_unit =  'g'
     * def unit_weight =  'kg'
     * def record_type =  1
-
     * call read("classpath:api/work/workbenchButton/saveRecord.feature")
     * match $.result == "success"
-
     * def case_id = response.data.case_id
     * def peronId = response.data.peronId
+    * print case_id
+    * print peronId

@@ -1,10 +1,12 @@
 {
-  "case_state": "#(case_state)",
+  "case_state": "#(pageno)",
   "pageno": "#(pageno)",
   "pagesize": "#(pagesize)",
   "sampleAction": "#(sampleAction)",
-  "diagnosis_date_range": [],
-  "appointTimeRange": [],
-  "patient_birthday_range": [],
-  "diagnosis_state": ""
+  "diagnosis_state": "#(diagnosis_state)",
+  "mother_name": "#(mother_name)",
+  "diagnosis_date_range": "#(diagnosis_date_range)",
+  "data_source": "#(data_source)",
+  "patient_birthday_range": "#(patient_birthday_range)",
+  "appointTimeRange": "#(appointTimeRange)"
 }

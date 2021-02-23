@@ -4,6 +4,7 @@ Feature:工作台--->复检安排
     * url zlUrl
 
   Scenario:工作台--->复检安排
+    #复检安排
     * call read("classpath:case/work/message/getNotice.feature")
 
     * def patient_mobile = '13656694002'
@@ -14,5 +15,6 @@ Feature:工作台--->复检安排
     * def advice = null
     * def record_id = null
 
+    #发送预约短信
     * call read("classpath:api/work/message/sendRevisitNotice.feature")
     * match $.result == "success"
