@@ -1,0 +1,6 @@
+{
+  username: 'root',
+  password: 'biosan#17',
+  jdbcUrl: 'jdbc:mysql://172.100.100.10:33026/zl_test?serverTimezone=UTC&characterEncoding=utf8&useUnicode=true&useSSL=false',
+  driverClassName: 'com.mysql.jdbc.Driver'
+}

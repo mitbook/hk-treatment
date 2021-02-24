@@ -17,4 +17,8 @@ Feature:工作台--->复检安排
 
     #发送预约短信
     * call read("classpath:api/work/message/sendRevisitNotice.feature")
+
+    * def speaker = '妈妈'
+    #电话
+    * call read("classpath:api/work/message/sendRevisitNotices.feature")
     * match $.result == "success"

@@ -14,5 +14,5 @@
 
 ###数据校验
    1.新增病人到新增病程之后数据校验测试用例目录:case/work/workbench/queryCaseList.feature
-   
+   2.数据来源区分是否共享data_source:["0"]
 ```
