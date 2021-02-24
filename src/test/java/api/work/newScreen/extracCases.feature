@@ -30,3 +30,4 @@ Feature:工作台--->导入病例
     * def diagnosis_state = ''
     #根据母亲姓名查询病例是否存在
     * call read("classpath:api/work/workbench/queryCaseList.feature@hk_edu")
+    * match $.result == "success"
