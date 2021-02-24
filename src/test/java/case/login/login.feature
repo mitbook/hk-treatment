@@ -5,7 +5,7 @@ Feature: 获取token
 
 
   Scenario: 获取token
-    * def user = 'whzz'
+    * def user = 'hgsfy'
     * def verifyCode = '1234'
     * def random = '1234567890'
     * call read("classpath:case/login/getKeyPair.feature")

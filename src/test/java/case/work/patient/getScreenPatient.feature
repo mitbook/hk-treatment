@@ -14,6 +14,5 @@ Feature:工作台--->导入病例--->查询病例列表
     * def needCount = 0
     * def pageNum = 1
     * def pageSize = 50
-
     * call read("classpath:api/work/patient/getScreenPatient.feature")
     * match $.result == "success"

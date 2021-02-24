@@ -8,7 +8,7 @@ Feature:获取tokenId
   Scenario:获取tokenId
     Given path '/login/getToken'
     * def publicKey = $.data
-    * def password = md5.encrypt("q1234567",publicKey)
+    * def password = md5.encrypt("biosan#17",publicKey)
     * form fields read('classpath:api/toLogin/getToken.json')
     When method post
     Then status 200
