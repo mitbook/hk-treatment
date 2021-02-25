@@ -9,7 +9,7 @@ Feature:工作台-->查询病例列表
     #新建病程(调用新建病程中的母亲姓名)
     * call read("classpath:case/work/workbenchButton/saveRecord.feature")
     * match $.result == "success"
-
+    * print response
     #获取新建病程返回的case_id
     * def caseId = response.data.case_id
 
@@ -23,7 +23,6 @@ Feature:工作台-->查询病例列表
     * def data_source = []
     * def patient_birthday_range = []
     * def appointTimeRange = []
-
     #通过母亲姓名查询数据是否新增到病例列表中
     * call read("classpath:api/work/workbench/queryCaseList.feature")
 
@@ -45,23 +44,14 @@ Feature:工作台-->查询病例列表
     #获取就诊人姓名
     * def patientName = response.data.list[0].patient_name
 
-    #获取联合查询返回的total
-    * def total = response.data.total
-
-    #校验疾病名称
-    * match disease_name == disease_name
-
-    #校验疾病状态
-    * match diagnosis_state == diagnosis_state
-
      #校验case_id是否相等
-    * match caseId == caseId
+    * match caseId == case_ids
 
     #校验母亲姓名
-    * match motherName == motherName
+    * match motherName == mother_name
 
     #校验就诊人姓名
-    * match patientName == patientName
+    * match patientName == patient_name
 
   @ignore
   @hk
