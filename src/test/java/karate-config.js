@@ -8,20 +8,24 @@ function fn() {
   var config = {
     env: env,
     zlUrl: 'http://172.100.100.224:8002',
+    acmeUrl: 'http://test.acme.biosan.cn',
     appletsUrl:'https://xcx.sys.saas.biosan.cn'
   }
 
   if (env == 'test') {
     config.zlUrl = 'http://172.100.100.224:8002'
+    config.acmeUrl = 'http://test.acme.biosan.cn'
     config.appletsUrl= 'https://xcx.sys.saas.biosan.cn'
     config.dbConfig = karate.read('classpath:dBConfig.json')
 
   } else if (env == 'testAuto') {
     config.zlUrl = 'http://172.100.100.224:8002'
+    config.acmeUrl = 'http://test.acme.biosan.cn'
     config.appletsUrl= 'https://xcx.sys.saas.biosan.cn'
     config.dbConfig = karate.read('classpath:dBConfig.json')
   } else if (env == 'pre') {
     config.zlUrl = 'http://172.100.100.224:8002'
+    config.acmeUrl = 'http://test.acme.biosan.cn'
     config.appletsUrl= 'https://xcx.sys.saas.biosan.cn'
     config.dbConfig = karate.read('classpath:dBConfig.json')
   }
