@@ -33,6 +33,8 @@ function fn() {
   var authTokenBag = karate.callSingle(
       "classpath:case/login/login.feature", config)
   config.authToken = authTokenBag.authToken
+  var loginSession = karate.callSingle("classpath:case/acme/doLogin.feature", config)
+  config.SESSION = loginSession.SESSION
   karate.log("karate-config.js文件中获取到接口认证authToken的值:" + config.authToken)
   return config;
 }
