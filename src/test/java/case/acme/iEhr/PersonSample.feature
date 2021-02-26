@@ -1,4 +1,4 @@
-Feature: 采样管理 - 样本登记
+Feature: 采样管理---->样本登记
 
   Background:
     * url acmeUrl
@@ -7,7 +7,7 @@ Feature: 采样管理 - 样本登记
     * def baCode = Java.type('util.data.BarCode')
     
   @ignore
-  Scenario: 接口定义- 样本登记接口
+  Scenario: 采样管理---->样本登记
     * def barCodes = baCode.barCode()
     * def name = randomName.getRandomName()
     * def freedepend =  ''
@@ -73,3 +73,10 @@ Feature: 采样管理 - 样本登记
     * def pagecode =  'sampleadd'
     * def modifydetail =  '样本录入'
     * call read("classpath:api/acme/iEhr/PersonSample.feature")
+    * json result = response[0].result
+    * def personid = result[0].personid
+    * def sampleid = result[0].sampleid
+    * def operatetime = result[0].operatetime
+    * print '筛查者id personid:', personid
+    * print '筛查者样本id sampleid:', sampleid
+    * print "末次操作时间:", operatetime
