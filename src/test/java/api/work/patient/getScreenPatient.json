@@ -1,12 +1,7 @@
 {
-  "patient_type": "#(patient_type)",
+  "source": "#(source)",
   "samplebarcode": "#(samplebarcode)",
-  "recall_num_low": "#(recall_num_low)",
-  "mother_name": "#(mother_name)",
-  "report_start_date": "#(report_start_date)",
-  "report_end_date": "#(report_end_date)",
-  "isPaging": "#(isPaging)",
-  "needCount": "#(needCount)",
-  "pageNum": "#(pageNum)",
-  "pageSize": "#(pageSize)"
+  "collection_start_date": "#(collection_start_date)",
+  "collection_end_date": "#(collection_end_date)",
+  "patientId": "#(patientId)"
 }
