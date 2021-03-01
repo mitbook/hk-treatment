@@ -49,5 +49,5 @@
   或者后面通过手工处理或者对接接口拿到acme业务流数据(到达结论审核的数据),后进行绑定,以及校验绑定状态
 
 ###测试用例
-1.
+1.https://ones.ai/project/#/testcase/team/GHq6q2mF/plan/LZeBn5zj/library
 ```
