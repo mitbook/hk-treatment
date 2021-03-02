@@ -1,0 +1,59 @@
+{
+  "patient_name": "#(patient_name)",
+  "patient_sex": "#(patient_sex)",
+  "patient_birthday": "#(patient_birthday)",
+  "mother_name": "#(mother_name)",
+  "patient_mobile": "#(patient_mobile)",
+  "cure_date": "#(cure_date)",
+  "household_code": null,
+  "patient_age": "0天",
+  "pregweek": 0,
+  "pregday": 0,
+  "blood_pressure_high": null,
+  "blood_pressure_low": null,
+  "font": "",
+  "reserve_date": null,
+  "birth_weight_unit": "g",
+  "unit_weight": "kg",
+  "record_type": "1",
+  "recipe": {
+    "recipeRecords": [
+      {
+        "key": 1,
+        "name": "",
+        "nums": "",
+        "danwei": "",
+        "rate": "",
+        "info": "",
+        "indexForSort": ""
+      }
+    ],
+    "recipes_date": "",
+    "recipes_remark": "",
+    "id": ""
+  },
+  "recordMedicines": {
+    "combinedRecords": "[{\"key\":1,\"name\":\"\",\"route\":\"\",\"startTime\":\"\",\"endTime\":\"\",\"nums\":\"\",\"unit\":\"\",\"rate\":\"\",\"rateUnit\":\"\",\"info\":\"\",\"indexForSort\":\"\"}]",
+    "medDate": "#(medDate)",
+    "medContent": "",
+    "guideObject": "",
+    "nowDose": "",
+    "id": ""
+  },
+  "advice": "",
+  "diseaseDiags": [
+    {
+      "experiment_code": "",
+      "disease_id": "",
+      "diagnosis_state": "2",
+      "disableDate": true,
+      "main_diagnosis": "1",
+      "diagnosis_date": null,
+      "diseaseError": false,
+      "experimentError": false
+    }
+  ],
+  "samples": [],
+  "adviceModify": 0,
+  "orderId": []
+}

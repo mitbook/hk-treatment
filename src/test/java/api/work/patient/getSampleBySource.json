@@ -1,0 +1,10 @@
+{
+  "source":"#(source)",
+  "samplebarcode": "#(samplebarcode)",
+  "patient_name": "#(patient_name)",
+  "mother_name": "#(mother_name)",
+  "sex": "#(sex)",
+  "collection_start_date": "#(collection_start_date)",
+  "collection_end_date": "#(collection_end_date)",
+  "patientId": "#(patientId)"
+}

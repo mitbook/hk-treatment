@@ -3,6 +3,7 @@ Feature:工作台-->新增病程
   Background:
     * url zlUrl
     * def randomName = Java.type('util.rand.RName')
+    * def time = Java.type('util.rsa.GetTime')
 
   @ignore
   Scenario:工作台-->新增病程
@@ -62,3 +63,22 @@ Feature:工作台-->新增病程
     * match $.result == "success"
     * def case_id = response.data.case_id
     * def peronId = response.data.peronId
+
+
+  @ignore
+  @hk
+  Scenario:工作台-->新增病程(acme数据流转)
+    * def getTimes = time.getBirthTime()
+    * call read("classpath:api/acme/ehrNewborn/online/sample.feature")
+    * def mother_name = response.Rows[0].mothername
+    * def patient_birthday = getTimes
+    * def patient_name = mother_name
+    * def patient_name = mother_name
+    * def patient_sex = '男'
+    * def patient_mobile = '18072710518'
+    * def cure_date = getTimes
+    * def medDate = getTimes
+    * call read("classpath:api/work/workbenchButton/saveRecord.feature@hk")
+    * match $.result == "success"
+    * def case_id = response.data.case_id
+
