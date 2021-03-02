@@ -26,7 +26,6 @@ Feature:工作台--->删除病例
     #查询病例列表
     * call read("classpath:case/work/workbench/queryCaseList.feature@hk")
 
-    #申请共享
     * def type = ''
     * def case_id = response.data.list[0].case_id
     * def patient_name = response.data.list[0].patient_name

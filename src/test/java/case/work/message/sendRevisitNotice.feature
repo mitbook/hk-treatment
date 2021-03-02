@@ -23,3 +23,5 @@ Feature:工作台--->复检安排
     * call read("classpath:api/work/message/sendRevisitNotices.feature")
 
     * match $.result == "success"
+
+    #微信暂不绑定病例进行推送

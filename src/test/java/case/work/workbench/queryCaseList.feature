@@ -9,7 +9,7 @@ Feature:工作台-->查询病例列表
     #新建病程(调用新建病程中的母亲姓名)
     * call read("classpath:case/work/workbenchButton/saveRecord.feature")
     * match $.result == "success"
-    * print response
+
     #获取新建病程返回的case_id
     * def caseId = response.data.case_id
 
@@ -23,6 +23,7 @@ Feature:工作台-->查询病例列表
     * def data_source = []
     * def patient_birthday_range = []
     * def appointTimeRange = []
+
     #通过母亲姓名查询数据是否新增到病例列表中
     * call read("classpath:api/work/workbench/queryCaseList.feature")
 
