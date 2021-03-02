@@ -6,6 +6,7 @@ Feature:工作台-->新增病程
     * def time = Java.type('util.rsa.GetTime')
 
   @ignore
+  @mit
   Scenario:工作台-->新增病程
     * call read("classpath:case/work/ConsultationMission/getLikelyCase.feature")
     * def cure_date =  '2021-02-22'

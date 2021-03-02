@@ -5,7 +5,7 @@ Feature:工作台--->删除病例
 
   Scenario:工作台--->删除病例
     #获取病例新增的数据
-    * call read("classpath:case/work/workbenchButton/saveRecord.feature")
+    * call read("classpath:case/work/workbenchButton/saveRecord.feature@hk")
     * def case_id = response.data.case_id
 
     ##新增病例之后进行删除

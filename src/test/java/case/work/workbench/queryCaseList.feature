@@ -4,10 +4,12 @@ Feature:工作台-->查询病例列表
     * url zlUrl
 
 
+  @ignore
+  @mit
   Scenario:工作台-->查询病例列表
 
     #新建病程(调用新建病程中的母亲姓名)
-    * call read("classpath:case/work/workbenchButton/saveRecord.feature")
+    * call read("classpath:case/work/workbenchButton/saveRecord.feature@hk")
     * match $.result == "success"
 
     #获取新建病程返回的case_id
