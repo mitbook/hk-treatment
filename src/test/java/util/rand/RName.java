@@ -90,9 +90,4 @@ public class RName {
         }
         return str;
     }
-    
-    public static void main(String[] args) {
-        
-        System.out.println(RName.getRandomName());
-    }
 }
