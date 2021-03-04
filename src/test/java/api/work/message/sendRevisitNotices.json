@@ -1,11 +1,11 @@
 {
   "case_id": "#(case_id)",
-  "patient_mobile":"#(patient_mobile)",
-  "type":"#(type)",
-  "appoint_time":"#(appoint_time)",
-  "speaker":"#(speaker)",
-  "appoint_type":"#(appoint_type)",
-  "import_remark":"#(import_remark)",
-  "advice":"#(advice)",
-  "record_id":"#(record_id)"
+  "patient_mobile": "#(patient_mobile)",
+  "type": "#(type)",
+  "appoint_time": "#(appoint_time)",
+  "speaker": "#(speaker)",
+  "appoint_type": "#(appoint_type)",
+  "import_remark": "#(import_remark)",
+  "advice": "#(advice)",
+  "record_id": "#(record_id)"
 }

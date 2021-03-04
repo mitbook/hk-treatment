@@ -4,7 +4,6 @@ Feature:工作台--->发送消息
     * url zlUrl
 
 
-
   Scenario:工作台--->发送消息
     Given path '/message/batchSendMessage'
     #单条消息

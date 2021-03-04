@@ -1,11 +1,11 @@
 {
-  "case_state":"#(case_state)",
-  "pageno":"#(pageno)",
-  "pagesize":"#(pagesize)",
-  "sampleAction":"#(sampleAction)",
+  "case_state": "#(case_state)",
+  "pageno": "#(pageno)",
+  "pagesize": "#(pagesize)",
+  "sampleAction": "#(sampleAction)",
   "mother_name": "#(mother_name)",
-  "diagnosis_date_range":"#(diagnosis_date_range)",
-  "appointTimeRange":"#(appointTimeRange)",
-  "patient_birthday_range":"#(patient_birthday_range)",
+  "diagnosis_date_range": "#(diagnosis_date_range)",
+  "appointTimeRange": "#(appointTimeRange)",
+  "patient_birthday_range": "#(patient_birthday_range)",
   "diagnosis_state": "#(diagnosis_state)"
 }

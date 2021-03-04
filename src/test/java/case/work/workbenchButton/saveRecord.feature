@@ -69,6 +69,9 @@ Feature:工作台-->新增病程
   @ignore
   @hk
   Scenario:工作台-->新增病程(acme数据流转)
+    #先执行数据同步
+    * call read("classpath:api/setting/sync/syncCase.feature")
+
     * def getTimes = time.getBirthTime()
     * call read("classpath:api/acme/ehrNewborn/online/sample.feature")
     * def mother_name = response.Rows[0].mothername
@@ -79,6 +82,7 @@ Feature:工作台-->新增病程
     * def patient_mobile = '18072710518'
     * def cure_date = getTimes
     * def medDate = getTimes
+
     * call read("classpath:api/work/workbenchButton/saveRecord.feature@hk")
     * match $.result == "success"
     * def case_id = response.data.case_id

@@ -1,5 +1,5 @@
 {
-  "source":"#(source)",
+  "source": "#(source)",
   "samplebarcode": "#(samplebarcode)",
   "patient_name": "#(patient_name)",
   "mother_name": "#(mother_name)",

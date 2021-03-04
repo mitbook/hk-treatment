@@ -51,7 +51,8 @@ public class jdbcUtils {
          */
         return jdbcTemplate.queryForList(query);
     }
-    public void UpdateData(String sql){
+    
+    public void UpdateData(String sql) {
         jdbcTemplate.update(sql);
     }
 }

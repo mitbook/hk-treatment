@@ -1,5 +1,7 @@
 package util.data;
+
 import java.util.Random;
+
 /**
  * @author pengzhengfa
  */
@@ -11,9 +13,10 @@ public class BarCode {
     
     /**
      * 生成条形码
+     *
      * @return
      */
-    public static String barCode(){
+    public static String barCode() {
         for (int j = 0; j < 1; j++) {
             for (int i = 0; i < 15; i++) {
                 int subNum = random.nextInt(9);

@@ -1,4 +1,5 @@
 package util.rsa;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -18,6 +19,7 @@ public class GetTime {
         String searchTime = dayAgo.toString();
         return searchTime;
     }
+    
     public static String getBirthTime() {
         LocalDate dayAgo = LocalDate.now().minusDays(7);
         String searchTime = dayAgo.toString();

@@ -1,7 +1,7 @@
 {
-  "relativePath":"cn/biosan/acme/gateway/demo.feature",
-  "featureParams":{
-    "key":"name",
-    "value":"World!"
+  "relativePath": "cn/biosan/acme/gateway/demo.feature",
+  "featureParams": {
+    "key": "name",
+    "value": "World!"
   }
 }
