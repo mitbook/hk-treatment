@@ -9,6 +9,7 @@ Feature:工作台-->新增病程
   @mit
   Scenario:工作台-->新增病程
     * call read("classpath:case/work/ConsultationMission/getLikelyCase.feature")
+
     * def cure_date =  '2021-02-22'
     * def household_name =  '北京/北京市/昌平区'
     * def household_code =  '110000110100110114'
@@ -60,7 +61,7 @@ Feature:工作台-->新增病程
     * def birth_weight_unit =  'g'
     * def unit_weight =  'kg'
     * def record_type =  1
-    * call read("classpath:api/work/workbenchButton/saveRecord.feature")
+    * call read("classpath:api/work/workbenchButton/saveRecord.feature@mit")
     * match $.result == "success"
     * def case_id = response.data.case_id
     * def peronId = response.data.peronId

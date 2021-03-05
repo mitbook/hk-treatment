@@ -25,4 +25,13 @@ public class BarCode {
         }
         return uuid;
     }
+    public static String caseCode() {
+        for (int j = 0; j < 1; j++) {
+            for (int i = 0; i < 15; i++) {
+                int subNum = random.nextInt(9);
+                uuid += subNum;
+            }
+        }
+        return uuid.substring(4,19);
+    }
 }

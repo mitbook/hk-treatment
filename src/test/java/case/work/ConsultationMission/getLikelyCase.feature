@@ -14,3 +14,5 @@ Feature:工作台-->新增病人
     * def patient_mobile = "13656694002"
     * call read("classpath:api/work/ConsultationMission/getLikelyCase.feature")
     * match $.result == "success"
+    * def birthdays = patient_birthday
+    * def sex = patient_sex

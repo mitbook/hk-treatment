@@ -5,6 +5,7 @@ Feature:工作台--->新增病程
 
 
   @ignore
+  @mit
   Scenario:工作台--->新增病程
     Given path '/workbenchButton/saveRecord'
     * header authToken = authToken
