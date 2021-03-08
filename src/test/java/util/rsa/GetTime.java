@@ -28,9 +28,10 @@ public class GetTime {
     
     /**
      * 获取当前时间戳
+     *
      * @return
      */
-    public static  String getTimeMillis(){
+    public static String getTimeMillis() {
         String timeMillis = String.valueOf(System.currentTimeMillis());
         return timeMillis;
     }
