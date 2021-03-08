@@ -41,19 +41,15 @@ Feature:工作台-->查询病例列表
     * print id
 
     * def caseCode = case_code.caseCode()
-
     * def timeMillis = times.getTimeMillis()
 
     * def blood_card_num =  null
     * def screen_date =  null
     * def recall_num = caseCode
     * def draw_blood_hos =  '浙江省人民医院'
-
     * def mother_age =  30
-
     * def reserved4 =  null
     * def hyperthyroidism =  'auto_不知道'
-
     * def link_telephone =  '13656694002'
     * def address_name =  '北京/北京市/昌平区'
     * def address_code =  '110000110100110114'
@@ -64,11 +60,8 @@ Feature:工作台-->查询病例列表
     * def case_id =  caseId
     * def birth_weight_unit =  'g'
     * def disease_id =  '2147'
-
     * def xinshai_county =  null
     * def xinshai_countyId =  '110114'
-
-
     * def house_type_name =  '非农业户口'
     * def barcode_num =  null
     * def data_source =  '0'
@@ -77,8 +70,6 @@ Feature:工作台-->查询病例列表
     * def mother_id_type_code =  '1'
     * def disease_name =  '未知'
     * def case_state =  1
-
-
     * def household_address =  null
     * def check_department =  '13572'
     * def personid =  null
@@ -95,8 +86,6 @@ Feature:工作台-->查询病例列表
     * def experiment_code =  ''
     * def appoint_remark =  null
     * def import_remark =  null
-
-
     * def temperature =  null
     * def pulse =  null
     * def breathing =  null
@@ -166,7 +155,6 @@ Feature:工作台-->查询病例列表
     * def father_height =  null
     * def pregnancy_complications =  null
     * def experimentNum =  null
-
     * def diseaseName =  '未知'
     * def diagnosticName =  '疑似'
     * def mother_household_name =  '北京/北京市/昌平区'
