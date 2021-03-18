@@ -138,6 +138,5 @@
   "diseaseName": "#(diseaseName)",
   "diagnosticName": "#(diagnosticName)",
   "mother_household_name": "#(mother_household_name)",
-  "father_household_name": "#(father_household_name)",
-  "patient_age1": "#(patient_age1)"
+  "father_household_name": "#(father_household_name)"
 }

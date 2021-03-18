@@ -22,3 +22,7 @@ Feature:工作台--->样本库--->提取样本--->复制样本
     * call read("classpath:api/work/patient/getScreenPatient.feature")
     * def personId = response.data[0].list[0].personid
     * match $.result == "success"
+
+
+    #在复制样本当中需要加上别人的病程进行复制(会提示就诊人姓名与母亲姓名必须一致,条件查询的时候)
+    #所以该功能无法测试

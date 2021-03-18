@@ -20,3 +20,5 @@ Feature:工作台--->样本库--->查询病例列表--->绑定病例
     * match response.data[0].bingdingState == 1
 
     * match $.result == "success"
+
+    ###增加acme复检流程,复检之后样本自动推送

@@ -66,7 +66,6 @@ Feature:工作台-->新增病程
     * def case_id = response.data.case_id
     * def peronId = response.data.peronId
 
-
   @ignore
   @hk
   Scenario:工作台-->新增病程(acme数据流转)

@@ -36,4 +36,10 @@
 1.在执行该自动化用例之前首先要启动acme业务测试用例服务,保障结论申请的数据到达诊疗系统
 ###测试用例
 1.https://ones.ai/project/#/testcase/team/GHq6q2mF/plan/LZeBn5zj/library
+
+
+
+#用例补充:
+1.case/work/patient/bindingScreenPatient.feature(增加acme复检流程,复检之后样本自动推送,acme测开发添加)
+2.在工作台中选择病程之后按钮栏下面的序号删除按钮,未复诊状态点击删除按钮是取消预约或者修改预约,其他的是删除病程
 ```

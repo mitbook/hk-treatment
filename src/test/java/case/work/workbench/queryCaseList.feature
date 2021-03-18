@@ -4,7 +4,7 @@ Feature:工作台-->查询病例列表
     * url zlUrl
     * def case_code = Java.type('util.data.BarCode')
     * def times = Java.type('util.rsa.GetTime')
-
+    * def source = Java.type('util.data.GetDataSource')
   @ignore
   @mit
   Scenario:工作台-->查询病例列表
@@ -31,6 +31,7 @@ Feature:工作台-->查询病例列表
     * def patient_id = response.data.list[0].patient_id
 
 
+    * def souces = source.getDataSource()
     * def case_id = caseId
     * call read("classpath:api/work/workbench/queryRecordsList.feature")
     * def record_id = response.data[0].record_id
@@ -64,7 +65,7 @@ Feature:工作台-->查询病例列表
     * def xinshai_countyId =  '110114'
     * def house_type_name =  '非农业户口'
     * def barcode_num =  null
-    * def data_source =  '0'
+    * def data_source =  souces
     * def admission_num = caseCode
     * def mother_id_no =  '110101199003070097'
     * def mother_id_type_code =  '1'
@@ -159,7 +160,6 @@ Feature:工作台-->查询病例列表
     * def diagnosticName =  '疑似'
     * def mother_household_name =  '北京/北京市/昌平区'
     * def father_household_name =  '北京/北京市/昌平区'
-    * def patient_age1 =  '17天'
 
     * call read("classpath:api/work/workbench/updateCaseDetails.feature")
     * match $.result == "success"

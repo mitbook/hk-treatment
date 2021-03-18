@@ -8,7 +8,7 @@ Feature:工作台--->导入病例
   Scenario:工作台--->导入病例
     Given path '/newScreen/extracCases'
     * header authToken = authToken
-    * call read("classpath:case/work/patient/getScreenPatient.feature")
+    * call read("classpath:case/work/patient/copySampleToLocal.feature")
     * def personId = response.data[0].personid
     * print personId
     * request ["+"'"+personId+"']
@@ -31,3 +31,7 @@ Feature:工作台--->导入病例
     #根据母亲姓名查询病例是否存在
     * call read("classpath:api/work/workbench/queryCaseList.feature@hk_edu")
     * match $.result == "success"
+    * match mother_name == response.data.list[0].mother_name
+    * match patient_sex == response.data.list[0].patient_sex
+    * match patient_mobile == response.data.list[0].patient_mobile
+    * match patient_birthday == response.data.list[0].patient_birthday

@@ -8,6 +8,8 @@ Feature:工作台--->删除病例
   Scenario:工作台--->删除病例(无共享病例的标记)
     #获取病例新增的数据
     * call read("classpath:case/work/workbenchButton/saveRecord.feature@hk")
+
+    ##################在工作台中的最左侧中的数据来源修改需要分为4种情况(除了共享病例以外)
     * def case_id = response.data.case_id
 
     #新增病例之后进行删除
@@ -27,7 +29,7 @@ Feature:工作台--->删除病例
 
   Scenario:工作台--->删除病例(共享病例,申请中)
     #查询病例列表
-    * call read("classpath:case/work/workbench/queryCaseList.feature@hk")
+    * call read("classpath:case/work/workbench/queryCaseList.feature@mit")
 
     * def type = ''
     * def case_id = response.data.list[0].case_id
@@ -48,7 +50,7 @@ Feature:工作台--->删除病例
     #校验共享病例是否能删除
     * match response.message == '共享病历不允许删除，请确认'
 
-  Scenario:工作台--->删除病例(共享病例,已拒绝)
+  Scenario:工作台--->删除病例(共享病例,已撤回)
     * def name = randomName.getRandomName()
     * def patient_name = name
     * def patient_sex = '男'
@@ -73,8 +75,8 @@ Feature:工作台--->删除病例
     * def referralid = response.data.referral_id
     * def case_id = response.data.case_id
 
-    #拒绝共享病例
-    * def remark = 'auto_拒绝共享病例'
+    #撤回共享病例
+    * def remark = 'auto_撤回共享病例'
     * call read("classpath:api/task/referral/cancelReferral.feature")
     * match $.result == "success"
 
