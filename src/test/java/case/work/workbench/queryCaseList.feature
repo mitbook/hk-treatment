@@ -51,7 +51,7 @@ Feature:工作台-->查询病例列表
     * def mother_age =  30
     * def reserved4 =  null
     * def hyperthyroidism =  'auto_不知道'
-    * def link_telephone =  '13656694002'
+    * def link_telephone =  '13656694005'
     * def address_name =  '北京/北京市/昌平区'
     * def address_code =  '110000110100110114'
     * def present_address =  'auto_北京'
@@ -227,3 +227,4 @@ Feature:工作台-->查询病例列表
     * def patient_birthday_range = []
     * def appointTimeRange = []
     * call read("classpath:api/work/workbench/queryCaseList.feature@hk")
+    * match $.result == "success"

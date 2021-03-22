@@ -26,6 +26,8 @@ Feature:工作台--->删除病例
     #校验case_id是否一致
     * match case_id == caseId
 
+    * match $.result == "success"
+
 
   Scenario:工作台--->删除病例(共享病例,申请中)
     #查询病例列表
@@ -36,7 +38,7 @@ Feature:工作台--->删除病例
     * def patient_name = response.data.list[0].patient_name
     * def patient_sex = response.data.list[0].patient_sex
     * def patient_birthday = response.data.list[0].patient_birthday
-    * def mobile = '13656694002'
+    * def mobile = '13656694005'
     * def referral_receive_area = 330000
     * def referral_receive_hospital = 13631
     * def referral_receive_depart = 13632
@@ -56,7 +58,7 @@ Feature:工作台--->删除病例
     * def patient_sex = '男'
     * def patient_birthday = '2021-03-04'
     * def mother_name = name
-    * def patient_mobile = '13656694002'
+    * def patient_mobile = '13656694005'
     * def cure_date = '2021-03-04'
     * def medDate = '2021-03-04'
     * call read("classpath:api/work/workbenchButton/saveRecord.feature@hk")

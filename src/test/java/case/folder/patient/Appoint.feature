@@ -25,7 +25,7 @@ Feature:病历夹-->查询预约列表--->更改预约
     * def appoint_id = response.data.list[0].appoint_id
     * def mother_name = response.data.list[0].mother_name
     * print mother_name
-    * def patient_mobile = '13656694002'
+    * def patient_mobile = '13656694005'
     * def type = 0
     * def appoint_type = 1
     * def appoint_time = '2021-02-20'

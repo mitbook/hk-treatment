@@ -5,9 +5,9 @@ Feature:主界面--->跳转amce--->获取cookie
 
   @ignore
   Scenario:主界面--->跳转amce--->获取cookie
-    * def user = 'hgsfy'
-    * def verifyCode = '1234'
-    * def random = '1234567890'
+    * def user = user
+    * def verifyCode = verifyCode
+    * def random = random
 
     * call read("classpath:case/login/getKeyPair.feature")
     * match $.result == "success"
@@ -21,6 +21,6 @@ Feature:主界面--->跳转amce--->获取cookie
     * def systemId = response.data.appList[0].appId
     * call read("classpath:api/acme/login/doLogin.feature")
     * def ACMETMP = responseCookies.ACMETMP.value
-    * print ACMETMP
+    * print ACMETMP的值为:ACMETMP
     * def SESSION = responseCookies.SESSION.value
-    * print SESSION
+    * print session的值为:SESSION

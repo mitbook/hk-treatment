@@ -6,6 +6,7 @@ Feature:任务管理--->共享任务--->撤销任务共享
 
   Scenario:任务管理--->共享任务--->撤销任务共享
     * call read("classpath:case/task/referral/getReferralApply.feature")
+    * match $.result == "success"
     * def referralid = response.data.list[0].referral_id
     * def referral_num = response.data.list[0].referral_num
     * def remark = 'auto_撤销任务共享'

@@ -10,4 +10,5 @@ Feature:工作台-->条件数据查询
     * request read('classpath:api/dataAnalysis/downloadDataByPatientId.json')
     When method post
     Then status 200
+    * match $.result == "success"
     * def case_id = response.data.list[0].case_id

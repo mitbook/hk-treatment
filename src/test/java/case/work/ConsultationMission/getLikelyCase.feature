@@ -11,7 +11,7 @@ Feature:工作台-->新增病人
     * def patient_sex = "男"
     * def patient_birthday = "2021-02-19"
     * def mother_name = name
-    * def patient_mobile = "13656694002"
+    * def patient_mobile = "13656694005"
     * call read("classpath:api/work/ConsultationMission/getLikelyCase.feature")
     * match $.result == "success"
     * def birthdays = patient_birthday

@@ -13,4 +13,4 @@ Feature:获取tokenId
     When method post
     Then status 200
     * def tokenIds = response.data.tokenId
-    * print tokenIds
+    * print tokenId的值为:tokenIds

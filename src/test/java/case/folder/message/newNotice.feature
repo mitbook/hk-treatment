@@ -8,7 +8,7 @@ Feature:病历夹-->病例列表-->发送消息
     * call read("classpath:case/folder/patient/patientCaseSearch.feature")
 
     * def case_id = response.data.list[3].case_id
-    * def mobile = '13656694002'
+    * def mobile = '13656694005'
     * def type = 0
     * def template = '阴性模版'
     * def speaker = '妈妈'

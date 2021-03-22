@@ -7,9 +7,13 @@ function fn() {
   //设置将要返回的JSON对象键值对
   var config = {
     env: env,
+    user: "hgsfy",
+    passwd: "biosan#17",
+    verifyCode:"1234",
+    random:"1234567890",
     zlUrl: 'http://172.100.100.224:8002',
     acmeUrl: 'http://test.acme.biosan.cn/Acme',
-    acmeHttpUrl: 'http://127.0.0.1:8080',
+    acmeHttpUrl: 'http://172.16.26.201:8080',
     appletsUrl: 'https://xcx.sys.saas.biosan.cn'
   }
 
@@ -17,20 +21,20 @@ function fn() {
     config.zlUrl = 'http://172.100.100.224:8002'
     config.acmeUrl = 'http://test.acme.biosan.cn/Acme'
     config.appletsUrl = 'https://xcx.sys.saas.biosan.cn'
-    config.acmeHttpUrl = 'http://127.0.0.1:8080'
+    config.acmeHttpUrl = 'http://172.16.26.201:8080'
     config.dbConfig = karate.read('classpath:dBConfig.json')
 
   } else if (env == 'testAuto') {
     config.zlUrl = 'http://172.100.100.224:8002'
     config.acmeUrl = 'http://test.acme.biosan.cn/Acme'
     config.appletsUrl = 'https://xcx.sys.saas.biosan.cn'
-    config.acmeHttpUrl = 'http://127.0.0.1:8080'
+    config.acmeHttpUrl = 'http://172.16.26.201:8080'
     config.dbConfig = karate.read('classpath:dBConfig.json')
   } else if (env == 'pre') {
     config.zlUrl = 'http://172.100.100.224:8002'
     config.acmeUrl = 'http://test.acme.biosan.cn/Acme'
     config.appletsUrl = 'https://xcx.sys.saas.biosan.cn'
-    config.acmeHttpUrl = 'http://127.0.0.1:8080'
+    config.acmeHttpUrl = 'http://172.16.26.201:8080'
     config.dbConfig = karate.read('classpath:dBConfig.json')
   }
   karate.configure('connectTimeout', 5000);

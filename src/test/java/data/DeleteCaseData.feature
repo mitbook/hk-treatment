@@ -10,3 +10,4 @@ Feature:工作台-->删除病例数据
     * form fields read('classpath:api/dataAnalysis/downloadDataByPatientId.json')
     When method get
     Then status 200
+    * match $.result == "success"

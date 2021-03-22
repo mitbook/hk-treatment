@@ -5,9 +5,9 @@ Feature: 获取token
 
 
   Scenario: 获取token
-    * def user = 'hgsfy'
-    * def verifyCode = '1234'
-    * def random = '1234567890'
+    * def user = user
+    * def verifyCode = verifyCode
+    * def random = random
     * call read("classpath:case/login/getKeyPair.feature")
     * call read("classpath:api/toLogin/getToken.feature")
     * call read("classpath:api/toLogin/login.feature")

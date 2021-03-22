@@ -11,18 +11,12 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
-
-import static org.junit.Assert.assertTrue;
-
-//重要提示：并行测试执行不能使用标注：@RunWith(Karate.class) !
 @KarateOptions(tags = {"~@ignore"})
 public class ParallelExectionTest {
     
     @BeforeClass
     public static void beforeClass() throws Exception {
-        System.setProperty("karate.env", "test"); // 如果其他用例有对karate.env的改变,则需要重新设置 (e.g. mock)
-        //        System.setProperty("karate.env", "pre"); // 如果其他用例有对karate.env的改变,则需要重新设置 (e.g. mock)
-        //        System.setProperty("karate.env", "testAuto"); // 如果其他用例有对karate.env的改变,则需要重新设置 (e.g. mock)
+        System.setProperty("karate.env", "test");
     }
     
     @Test
