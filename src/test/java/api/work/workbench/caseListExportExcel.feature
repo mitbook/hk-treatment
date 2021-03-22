@@ -11,5 +11,4 @@ Feature:工作台--->导出病例列表
     * request read("classpath:api/work/workbench/caseListExportExcel.json")
     When method post
     Then status 200
-#    * print response
     * byteExcel.byteArrayToExcel(responseBytes)

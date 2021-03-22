@@ -7,7 +7,7 @@ Feature:工作台--->复检安排
   @ignore
   Scenario:工作台--->复检安排
     #新建病程/编辑病程
-    * call read("classpath:case/work/workbenchButton/saveRecord.feature@hk")
+    * call read("classpath:case/work/workbenchButton/saveRecord.feature@addCaseAcme")
     * match $.result == "success"
 
     #复检安排

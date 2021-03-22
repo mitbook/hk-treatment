@@ -4,5 +4,5 @@ Feature:工作台-->查询病例列表
     * url zlUrl
 
   Scenario:工作台-->查询病例列表
-    * call read("classpath:case/work/workbench/queryCaseList.feature@mit")
+    * call read("classpath:case/work/workbench/queryCaseList.feature@selectCaseList")
     * match $.result == "success"

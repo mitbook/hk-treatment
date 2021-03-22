@@ -6,11 +6,11 @@ Feature:工作台-->查询病例列表
     * def times = Java.type('util.rsa.GetTime')
     * def source = Java.type('util.data.GetDataSource')
   @ignore
-  @mit
+  @selectCaseList
   Scenario:工作台-->查询病例列表
 
     #新建病程(调用新建病程中的母亲姓名)
-    * call read("classpath:case/work/workbenchButton/saveRecord.feature@mit")
+    * call read("classpath:case/work/workbenchButton/saveRecord.feature@addCase")
     * match $.result == "success"
 
     #获取新建病程返回的case_id
@@ -219,7 +219,7 @@ Feature:工作台-->查询病例列表
 
 
   @ignore
-  @hk
+  @selectAllCaseList
   Scenario:工作台-->查询所有的病例列表并进行删除
     * def case_state = 1
     * def pageno = 1
@@ -230,5 +230,5 @@ Feature:工作台-->查询病例列表
     * def data_source = []
     * def patient_birthday_range = []
     * def appointTimeRange = []
-    * call read("classpath:api/work/workbench/queryCaseList.feature@hk")
+    * call read("classpath:api/work/workbench/queryCaseList.feature@caseList")
     * match $.result == "success"

@@ -6,7 +6,7 @@ Feature:工作台-->新增病程
     * def time = Java.type('util.rsa.GetTime')
 
   @ignore
-  @mit
+  @addCase
   Scenario:工作台-->新增病程
     * call read("classpath:case/work/ConsultationMission/getLikelyCase.feature")
     * match $.result == "success"
@@ -62,13 +62,13 @@ Feature:工作台-->新增病程
     * def birth_weight_unit =  'g'
     * def unit_weight =  'kg'
     * def record_type =  1
-    * call read("classpath:api/work/workbenchButton/saveRecord.feature@mit")
+    * call read("classpath:api/work/workbenchButton/saveRecord.feature@allAddCase")
     * match $.result == "success"
     * def case_id = response.data.case_id
     * def peronId = response.data.peronId
 
   @ignore
-  @hk
+  @addCaseAcme
   Scenario:工作台-->新增病程(acme数据流转)
     #先执行数据同步
     * call read("classpath:api/setting/sync/syncCase.feature")
@@ -85,7 +85,7 @@ Feature:工作台-->新增病程
     * def cure_date = getTimes
     * def medDate = getTimes
 
-    * call read("classpath:api/work/workbenchButton/saveRecord.feature@hk")
+    * call read("classpath:api/work/workbenchButton/saveRecord.feature@partAddCase")
     * match $.result == "success"
     * def case_id = response.data.case_id
 

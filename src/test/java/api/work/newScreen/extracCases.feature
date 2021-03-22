@@ -29,7 +29,7 @@ Feature:工作台--->导入病例
     * def patient_birthday_range = []
     * def diagnosis_state = ''
     #根据母亲姓名查询病例是否存在
-    * call read("classpath:api/work/workbench/queryCaseList.feature@hk_edu")
+    * call read("classpath:api/work/workbench/queryCaseList.feature@allCaseList")
     * match $.result == "success"
     * match mother_name == response.data.list[0].mother_name
     * match patient_sex == response.data.list[0].patient_sex

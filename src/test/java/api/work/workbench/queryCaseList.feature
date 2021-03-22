@@ -14,7 +14,7 @@ Feature:工作台--->查询病例列表
     * match $.result == "success"
 
   @ignore
-  @hk
+  @caseList
   Scenario:工作台--->查询所有病例列表
     Given path '/workbench/queryCaseList'
     * header authToken = authToken
@@ -25,7 +25,7 @@ Feature:工作台--->查询病例列表
 
 
   @ignore
-  @hk_edu
+  @allCaseList
   Scenario:工作台--->查询所有病例列表
     Given path '/workbench/queryCaseList'
     * header authToken = authToken

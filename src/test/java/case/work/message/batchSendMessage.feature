@@ -7,7 +7,7 @@ Feature:工作台--->发送消息
   Scenario:工作台--->发送消息
     Given path '/message/batchSendMessage'
     #单条消息
-    * call read("classpath:case/work/workbench/queryCaseList.feature@hk")
+    * call read("classpath:case/work/workbench/queryCaseList.feature@selectAllCaseList")
     * match $.result == "success"
     #数组中下标为0的数据
     * def patient_id = response.data.list[0].patient_id

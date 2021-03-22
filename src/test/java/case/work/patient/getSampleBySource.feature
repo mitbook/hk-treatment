@@ -7,7 +7,7 @@ Feature:工作台--->样本库--->提取样本--->查询样本列表
   @ignore
   Scenario:工作台--->样本库--->提取样本--->查询样本列表
     #通过获取acme流转过来的数据进行病程数据的新增
-    * call read("classpath:case/work/workbenchButton/saveRecord.feature@hk")
+    * call read("classpath:case/work/workbenchButton/saveRecord.feature@addCaseAcme")
     * match $.result == "success"
 
     #数据准备

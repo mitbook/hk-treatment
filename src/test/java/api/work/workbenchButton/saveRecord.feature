@@ -5,7 +5,7 @@ Feature:工作台--->新增病程
 
 
   @ignore
-  @mit
+  @allAddCase
   Scenario:工作台--->新增病程
     Given path '/workbenchButton/saveRecord'
     * header authToken = authToken
@@ -15,7 +15,7 @@ Feature:工作台--->新增病程
     * match $.result == "success"
 
   @ignore
-  @hk
+  @partAddCase
   Scenario:工作台--->新增病程
     Given path '/workbenchButton/saveRecord'
     * header authToken = authToken

@@ -7,7 +7,7 @@ Feature:工作台--->删除病例
 
   Scenario:工作台--->删除病例(无共享病例的标记)
     #获取病例新增的数据
-    * call read("classpath:case/work/workbenchButton/saveRecord.feature@hk")
+    * call read("classpath:case/work/workbenchButton/saveRecord.feature@addCaseAcme")
     * match $.result == "success"
 
     ##################在工作台中的最左侧中的数据来源修改需要分为4种情况(除了共享病例以外)
@@ -31,7 +31,7 @@ Feature:工作台--->删除病例
 
   Scenario:工作台--->删除病例(共享病例,申请中)
     #查询病例列表
-    * call read("classpath:case/work/workbench/queryCaseList.feature@mit")
+    * call read("classpath:case/work/workbench/queryCaseList.feature@selectCaseList")
     * match $.result == "success"
 
     * def type = ''
@@ -64,7 +64,7 @@ Feature:工作台--->删除病例
     * def patient_mobile = '13656694005'
     * def cure_date = '2021-03-04'
     * def medDate = '2021-03-04'
-    * call read("classpath:api/work/workbenchButton/saveRecord.feature@hk")
+    * call read("classpath:api/work/workbenchButton/saveRecord.feature@partAddCase")
     * match $.result == "success"
     * def case_id = response.data.case_id
 
