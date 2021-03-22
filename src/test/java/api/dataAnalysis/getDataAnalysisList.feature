@@ -10,3 +10,4 @@ Feature:数据分析-->查询数据分析列表
     * request read('classpath:api/dataAnalysis/getDataAnalysisList.json')
     When method post
     Then status 200
+    * match $.result == "success"

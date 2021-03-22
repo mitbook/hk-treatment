@@ -10,3 +10,4 @@ Feature: 获取公钥
     * form fields read('classpath:api/toLogin/getKeyPair.json')
     When method post
     Then status 200
+    * match $.result == "success"

@@ -9,6 +9,7 @@ Feature:工作台-->新增病程
   @mit
   Scenario:工作台-->新增病程
     * call read("classpath:case/work/ConsultationMission/getLikelyCase.feature")
+    * match $.result == "success"
 
     * def cure_date =  '2021-02-22'
     * def household_name =  '北京/北京市/昌平区'
@@ -71,6 +72,7 @@ Feature:工作台-->新增病程
   Scenario:工作台-->新增病程(acme数据流转)
     #先执行数据同步
     * call read("classpath:api/setting/sync/syncCase.feature")
+    * match $.result == "success"
 
     * def getTimes = time.getBirthTime()
     * call read("classpath:api/acme/ehrNewborn/online/sample.feature")

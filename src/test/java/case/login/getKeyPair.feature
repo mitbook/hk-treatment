@@ -4,7 +4,8 @@ Feature: 获取公钥
     * url zlUrl
 
   @ignore
-  Scenario:  获取公钥
+  Scenario:获取公钥
 
     * call read("classpath:api/toLogin/getKeyPair.feature")
+
     * match $.result == "success"

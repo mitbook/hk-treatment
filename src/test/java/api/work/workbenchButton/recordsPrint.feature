@@ -10,3 +10,4 @@ Feature:工作台-->病程打印
     * form fields read('classpath:api/work/workbenchButton/recordsPrint.json')
     When method post
     Then status 200
+    * match $.result == "success"

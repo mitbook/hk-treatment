@@ -10,3 +10,4 @@ Feature:病历夹-->查询预约列表--->更改预约
     * form fields read('classpath:api/folder/patient/Appoint.json')
     When method post
     Then status 200
+    * match $.result == "success"

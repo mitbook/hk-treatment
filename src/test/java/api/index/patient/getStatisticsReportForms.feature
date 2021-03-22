@@ -10,3 +10,4 @@ Feature:首页--->统计年度病例
     * request read("classpath:api/index/patient/getStatisticsReportForms.json")
     When method post
     Then status 200
+    * match $.result == "success"

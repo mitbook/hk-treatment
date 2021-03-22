@@ -10,3 +10,4 @@ Feature:数据分析-->导出
     * request read('classpath:api/dataAnalysis/preDownloadDataList.json')
     When method post
     Then status 200
+    * match $.result == "success"

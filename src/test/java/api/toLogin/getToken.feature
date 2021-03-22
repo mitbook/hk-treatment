@@ -12,5 +12,6 @@ Feature:获取tokenId
     * form fields read('classpath:api/toLogin/getToken.json')
     When method post
     Then status 200
+    * match $.result == "success"
     * def tokenIds = response.data.tokenId
     * print tokenId的值为:tokenIds

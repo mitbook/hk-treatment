@@ -8,6 +8,7 @@ Feature:工作台--->样本库--->提取样本--->复制样本
   Scenario:工作台--->样本库--->提取样本--->复制样本
     #获取样本库中的列表数据
     * call read("classpath:case/work/patient/getSampleBySource.feature")
+    * match $.result == "success"
 
     * def sampleid = response.data[0].sampleid
 

@@ -10,3 +10,4 @@ Feature:任务管理--->获取共享任务列表
     * request read("classpath:api/task/referral/getReferralApply.json")
     When method post
     Then status 200
+    * match $.result == "success"

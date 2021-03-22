@@ -7,6 +7,7 @@ Feature:任务管理--->共享任务--->新增共享
   @ignore
   Scenario:任务管理--->共享任务--->新增共享
     * call read("classpath:case/task/referral/getRepeatCase.feature")
+    * match $.result == "success"
 
     * def case_id = response.data
     * def type = ''

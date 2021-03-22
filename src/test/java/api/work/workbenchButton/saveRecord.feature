@@ -12,7 +12,7 @@ Feature:工作台--->新增病程
     * request read("classpath:api/work/workbenchButton/saveRecord.json")
     When method post
     Then status 200
-
+    * match $.result == "success"
 
   @ignore
   @hk
@@ -22,3 +22,4 @@ Feature:工作台--->新增病程
     * request read("classpath:api/work/workbenchButton/saveRecords.json")
     When method post
     Then status 200
+    * match $.result == "success"

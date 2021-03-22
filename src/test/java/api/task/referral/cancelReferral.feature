@@ -10,3 +10,4 @@ Feature:任务管理--->撤销任务共享
     * form fields read('classpath:api/task/referral/cancelReferral.json')
     When method post
     Then status 200
+    * match $.result == "success"

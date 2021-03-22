@@ -14,3 +14,4 @@ Feature:工作台--->发送消息
     * request id
     When method post
     Then status 200
+    * match $.result == "success"

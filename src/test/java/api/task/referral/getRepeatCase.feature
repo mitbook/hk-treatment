@@ -11,3 +11,4 @@ Feature:首页--->新增共享
     * form fields read('classpath:api/task/referral/getRepeatCase.json')
     When method post
     Then status 200
+    * match $.result == "success"

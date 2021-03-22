@@ -10,3 +10,4 @@ Feature:病历夹-->查询就诊列表
     * form fields read('classpath:api/folder/patient/patientCaseSearch.json')
     When method post
     Then status 200
+    * match $.result == "success"

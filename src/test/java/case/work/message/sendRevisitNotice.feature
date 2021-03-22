@@ -6,6 +6,7 @@ Feature:工作台--->复检安排
   Scenario:工作台--->复检安排
     #复检安排
     * call read("classpath:case/work/message/getNotice.feature")
+    * match $.result == "success"
 
     * def patient_mobile = '13656694005'
     * def type = 0
@@ -17,6 +18,7 @@ Feature:工作台--->复检安排
 
     #发送预约短信
     * call read("classpath:api/work/message/sendRevisitNotice.feature")
+    * match $.result == "success"
 
     * def speaker = '妈妈'
     #电话

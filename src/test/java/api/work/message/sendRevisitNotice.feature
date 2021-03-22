@@ -11,3 +11,4 @@ Feature:工作台--->复检安排
     * form fields read("classpath:api/work/message/sendRevisitNotice.json")
     When method post
     Then status 200
+    * match $.result == "success"

@@ -11,7 +11,7 @@ Feature:工作台--->查询病例列表
     * request read("classpath:api/work/workbench/queryCaseList.json")
     When method post
     Then status 200
-
+    * match $.result == "success"
 
   @ignore
   @hk
@@ -21,6 +21,7 @@ Feature:工作台--->查询病例列表
     * request read("classpath:api/work/workbench/queryCaseLists.json")
     When method post
     Then status 200
+    * match $.result == "success"
 
 
   @ignore
@@ -31,4 +32,5 @@ Feature:工作台--->查询病例列表
     * request read("classpath:api/work/workbench/queryName.json")
     When method post
     Then status 200
+    * match $.result == "success"
 

@@ -10,3 +10,4 @@ Feature:工作台-->查询病例相关id
     * form fields read('classpath:api/work/workbench/queryRecordsList.json')
     When method post
     Then status 200
+    * match $.result == "success"

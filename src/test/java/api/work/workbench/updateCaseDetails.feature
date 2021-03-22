@@ -11,3 +11,4 @@ Feature:工作台--->更新病例详情
     * request read("classpath:api/work/workbench/updateCaseDetails.json")
     When method post
     Then status 200
+    * match $.result == "success"

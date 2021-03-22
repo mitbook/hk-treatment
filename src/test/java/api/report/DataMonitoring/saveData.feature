@@ -10,3 +10,4 @@ Feature:直报中心--->病例编辑
     * request read("classpath:api/report/DataMonitoring/saveData.json")
     When method post
     Then status 200
+    * match $.result == "success"

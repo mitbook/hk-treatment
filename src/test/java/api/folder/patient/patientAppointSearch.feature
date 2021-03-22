@@ -11,7 +11,7 @@ Feature:病历夹-->查询预约列表
     * form fields read('classpath:api/folder/patient/patientCaseSearch.json')
     When method post
     Then status 200
-
+    * match $.result == "success"
 
   @ignore
   @hk
@@ -21,3 +21,4 @@ Feature:病历夹-->查询预约列表
     * form fields read('classpath:api/folder/patient/patientAppointSearchs.json')
     When method post
     Then status 200
+    * match $.result == "success"

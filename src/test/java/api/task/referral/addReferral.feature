@@ -11,3 +11,4 @@ Feature:首页--->新增共享
     * form fields read('classpath:api/task/referral/addReferral.json')
     When method post
     Then status 200
+    * match $.result == "success"

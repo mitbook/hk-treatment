@@ -6,6 +6,7 @@ Feature:任务管理--->会诊任务--->撤销会诊任务
 
   Scenario:任务管理--->会诊任务--->撤销会诊任务
     * call read("classpath:case/task/ConsultationMission/addConsultation.feature")
+    * match $.result == "success"
     * def id = response.data.referral_id
     * def remark = 'auto_撤销会诊任务'
 

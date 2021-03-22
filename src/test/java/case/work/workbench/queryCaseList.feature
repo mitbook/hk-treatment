@@ -28,12 +28,15 @@ Feature:工作台-->查询病例列表
     * def appointTimeRange = []
     #通过母亲姓名查询数据是否新增到病例列表中
     * call read("classpath:api/work/workbench/queryCaseList.feature")
+    * match $.result == "success"
     * def patient_id = response.data.list[0].patient_id
 
 
     * def souces = source.getDataSource()
     * def case_id = caseId
     * call read("classpath:api/work/workbench/queryRecordsList.feature")
+    * match $.result == "success"
+
     * def record_id = response.data[0].record_id
     * def case_id = response.data[0].case_id
     * print record_id
@@ -178,6 +181,7 @@ Feature:工作台-->查询病例列表
 
     #通过母亲姓名查询数据是否新增到病例列表中
     * call read("classpath:api/work/workbench/queryCaseList.feature")
+
 
     #获取病例列表查询返回的case_id
     * def case_ids = response.data.list[0].case_id

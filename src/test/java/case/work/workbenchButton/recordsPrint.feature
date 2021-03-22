@@ -6,7 +6,7 @@ Feature:工作台-->病程打印
 
   Scenario:工作台-->病程打印
     * call read("classpath:case/task/ConsultationMission/addPatient.feature")
-
+    * match $.result == "success"
     * def case_id = response.data
 
     * call read("classpath:api/work/workbenchButton/recordsPrint.feature")

@@ -11,3 +11,4 @@ Feature:工作台--->样本库--->查询病例列表--->绑定病例
     * form fields read('classpath:api/work/patient/bindingScreenPatient.json')
     When method post
     Then status 200
+    * match $.result == "success"

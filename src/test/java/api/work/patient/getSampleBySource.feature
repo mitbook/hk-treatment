@@ -11,3 +11,4 @@ Feature:工作台--->样本库--->提取样本--->查询样本列表
     * request read("classpath:api/work/patient/getSampleBySource.json")
     When method post
     Then status 200
+    * match $.result == "success"

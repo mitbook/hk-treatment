@@ -10,3 +10,4 @@ Feature:消息中心--->医患沟通--->查询医患信息列表
     * request read("classpath:api/message/communicate/getCommunicateRecords.json")
     When method post
     Then status 200
+    * match $.result == "success"

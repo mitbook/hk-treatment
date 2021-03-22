@@ -13,6 +13,7 @@ Feature:任务管理--->会诊任务--->新增会诊
     * def consultation_remark = ''
 
     * call read("classpath:case/task/ConsultationMission/addPatient.feature")
+    * match $.result == "success"
     * def case_id = response.data
 
     * call read("classpath:api/task/ConsultationMission/addConsultation.feature")

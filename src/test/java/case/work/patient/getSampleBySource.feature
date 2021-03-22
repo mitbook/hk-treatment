@@ -8,6 +8,7 @@ Feature:工作台--->样本库--->提取样本--->查询样本列表
   Scenario:工作台--->样本库--->提取样本--->查询样本列表
     #通过获取acme流转过来的数据进行病程数据的新增
     * call read("classpath:case/work/workbenchButton/saveRecord.feature@hk")
+    * match $.result == "success"
 
     #数据准备
     * def case_state = 1
@@ -21,6 +22,7 @@ Feature:工作台--->样本库--->提取样本--->查询样本列表
     * def appointTimeRange = []
     #通过母亲姓名查询数据是否新增到病例列表中
     * call read("classpath:api/work/workbench/queryCaseList.feature")
+    * match $.result == "success"
 
     #获取下游接口数据
     * def patientId = response.data.list[0].patient_id

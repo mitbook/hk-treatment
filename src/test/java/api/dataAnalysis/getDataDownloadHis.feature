@@ -10,3 +10,4 @@ Feature:数据分析-->导出记录
     * request {}
     When method get
     Then status 200
+    * match $.result == "success"

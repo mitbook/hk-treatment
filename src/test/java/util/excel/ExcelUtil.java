@@ -13,7 +13,7 @@ public class ExcelUtil {
 
         System.out.println("Excel file generating");
         try {
-            FileUtils.writeByteArrayToFile(new File("util/file/response.xlsx"), ResponseBytes);
+            FileUtils.writeByteArrayToFile(new File("src/test/java/util/file/response.xlsx"), ResponseBytes);
             System.out.println("Excel file generated");
         } catch (IOException e) {
             System.out.println("Excel file generation failed");

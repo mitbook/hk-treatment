@@ -5,6 +5,7 @@ Feature:工作台--->发送消息
 
   Scenario:工作台--->发送消息
     * call read("classpath:case/task/ConsultationMission/addPatient.feature")
+    * match $.result == "success"
 
     * def case_id = response.data
     * def mobile = '13656694005'

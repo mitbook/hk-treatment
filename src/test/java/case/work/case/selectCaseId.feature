@@ -14,4 +14,4 @@ Feature: 查询case_id是否已经删除
     * def case_id = dbTestData[0].case_id
     * print case_id
     * def case_state = dbTestData[0].case_state
-    * print case_state
+    * print 病例状态:case_state

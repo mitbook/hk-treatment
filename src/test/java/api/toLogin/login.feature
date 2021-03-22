@@ -9,5 +9,6 @@ Feature:获取token
     * form fields read('classpath:api/toLogin/login.json')
     When method post
     Then status 200
+    * match $.result == "success"
     * def authToken = response.data
-    * print authToken
+    * print token:authToken
