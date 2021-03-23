@@ -36,5 +36,5 @@ Feature:工作台--->样本库--->提取样本--->查询样本列表
 
     #查询提取样本库中的数据
     * call read("classpath:api/work/patient/getSampleBySource.feature")
-    * def sampleid = response.data[0].sampleid
     * match $.result == "success"
+    * def sampleid = response.data[0].sampleid

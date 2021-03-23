@@ -5,6 +5,7 @@ Feature:工作台-->查询病例列表
     * def case_code = Java.type('util.data.BarCode')
     * def times = Java.type('util.rsa.GetTime')
     * def source = Java.type('util.data.GetDataSource')
+
   @ignore
   @selectCaseList
   Scenario:工作台-->查询病例列表
